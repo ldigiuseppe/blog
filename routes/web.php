@@ -32,3 +32,14 @@ Route::get('/', 'PostController@index')->name('index');
 
 Route::resource('posts', 'PostController');
 
+/****** Vue routes ******/
+Route::view('/vue', 'posts.indexv');
+Route::get('/readPosts', 'PostController@indexVue');
+Route::post('/createPosts', 'PostController@storeVue');
+Route::delete('/deletePosts/{id_post}', 'PostController@destroyVue');
+
+
+
+
+
+

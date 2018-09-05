@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="float-left">
+                <a class="btn btn-primary btn-sm" href="/vue"> Open with Vue.js</a>
+            </div>
+            @if (Auth::check())
+                <div class="float-right">
+                    <a href="{{ route('posts.create') }}" class="btn btn-primary btn-xs pull-right">Create New Post</a>
+                </div>
+            @endif
+        </div>
+    </div>
 
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -41,8 +53,6 @@
         </div>
 
     </div>
-
-
 
 
 @endsection
