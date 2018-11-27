@@ -26,5 +26,4 @@ Excecute to create database tables:
 php artisan migrate
 ```
 
-Demo wesite at [Blog](http://104.248.24.134/).
 
